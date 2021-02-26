@@ -46,6 +46,7 @@ public class Terreno {
 		// Start of user code constructor for Terreno)
 		super();
 		// End of user code
+		cantidad++;
 	}
 	
 	public Terreno(float ancho, float largo, String due_o) {

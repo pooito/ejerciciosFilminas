@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_fIR-oHfGEeu8Zd0yY3UihQ" name="Asesoria">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_fPbIcHfGEeu8Zd0yY3UihQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_86XHUHfGEeu8Zd0yY3UihQ" name="ito.poo.clases">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Z9KvMHfHEeu8Zd0yY3UihQ" name="DiscoMusical">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_q-C2QHfHEeu8Zd0yY3UihQ" name="tituloDisco" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_T464UHfIEeu8Zd0yY3UihQ" name="pistasMusica" visibility="private" type="_eoINAHfIEeu8Zd0yY3UihQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__6Eu0HfIEeu8Zd0yY3UihQ" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HHjpMHfJEeu8Zd0yY3UihQ" name="estiloMusica" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZHxtYHfJEeu8Zd0yY3UihQ" name="productor" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_jm-QIHfJEeu8Zd0yY3UihQ" name="addPista">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_5l_sMHfJEeu8Zd0yY3UihQ" name="pista" type="_eoINAHfIEeu8Zd0yY3UihQ"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_84UYkHfJEeu8Zd0yY3UihQ" name="deletePista">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_De98cHfKEeu8Zd0yY3UihQ" name="indice">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_J5hlEHfKEeu8Zd0yY3UihQ" name="eliminado" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eoINAHfIEeu8Zd0yY3UihQ" name="Pista">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_iMLikHfIEeu8Zd0yY3UihQ" name="titulo" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rB3J0HfIEeu8Zd0yY3UihQ" name="duracion" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
