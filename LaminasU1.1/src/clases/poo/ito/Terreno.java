@@ -26,9 +26,9 @@ public class Terreno {
 	private float largo = 0F;
 
 	/**
-	 * Description of the property dueÃ±o.
+	 * Description of the property due_o.
 	 */
-	private String dueño="";
+	private String due_o="";
 
 	/**
 	 * Description of the property cantidad.
@@ -46,13 +46,14 @@ public class Terreno {
 		// Start of user code constructor for Terreno)
 		super();
 		// End of user code
+		cantidad++;
 	}
 	
-	public Terreno(float ancho, float largo, String dueño) {
+	public Terreno(float ancho, float largo, String due_o) {
 		super();
 		this.ancho = ancho;
 		this.largo = largo;
-		this.dueño = dueño;
+		this.due_o = due_o;
 		cantidad++;
 	}
 
@@ -94,19 +95,19 @@ public class Terreno {
 	}
 
 	/**
-	 * Returns dueño.
-	 * @return dueño 
+	 * Returns due_o.
+	 * @return due_o 
 	 */
-	public String getDueño() {
-		return this.dueño;
+	public String getDue_o() {
+		return this.due_o;
 	}
 
 	/**
-	 * Sets a value to attribute dueño. 
-	 * @param newDueño 
+	 * Sets a value to attribute due_o. 
+	 * @param newDue_o 
 	 */
-	public void setDueño(String newDueño) {
-	    this.dueño = newDueño;
+	public void setDue_o(String newDue_o) {
+	    this.due_o = newDue_o;
 	}
 
 	/**
@@ -119,7 +120,7 @@ public class Terreno {
 
 	@Override
 	public String toString() {
-		return "Terreno [ancho=" + ancho + ", largo=" + largo + ", dueño=" + dueño + "]";
+		return "Terreno [ancho=" + ancho + ", largo=" + largo + ", dueÃ±o=" + due_o + "]";
 	}
 
 	
