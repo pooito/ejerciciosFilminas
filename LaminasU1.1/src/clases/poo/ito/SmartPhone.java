@@ -71,8 +71,7 @@ public class SmartPhone {
 		this.aplicaciones = aplicaciones;
 	}
 	
-	public SmartPhone(String marca, String modelo, int memoriaRAM, int memoriaROM, 
-			LocalDate fechaDeLanzamiento) {
+	public SmartPhone(String marca, String modelo, int memoriaRAM, int memoriaROM, LocalDate fechaDeLanzamiento) {
 		super();
 		this.marca = marca;
 		this.modelo = modelo;
