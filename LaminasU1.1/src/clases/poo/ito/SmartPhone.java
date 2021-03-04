@@ -45,7 +45,7 @@ public class SmartPhone {
 	/**
 	 * Description of the property aplicaciones.
 	 */
-	private HashSet<String> aplicaciones = new HashSet<String>();
+	private HashSet<String> aplicaciones = null;
 
 	// Start of user code (user defined attributes for SmartPhone)
 
@@ -57,6 +57,7 @@ public class SmartPhone {
 	public SmartPhone() {
 		// Start of user code constructor for SmartPhone)
 		super();
+		this.aplicaciones= new HashSet<String>();
 		// End of user code
 	}
 	
@@ -78,6 +79,7 @@ public class SmartPhone {
 		this.memoriaRAM = memoriaRAM;
 		this.memoriaROM = memoriaROM;
 		this.fechaDeLanzamiento = fechaDeLanzamiento;
+		this.aplicaciones= new HashSet<String>();
 	}
 
 	/**
@@ -86,6 +88,7 @@ public class SmartPhone {
 	 */
 	public void agregaAplicacion(String aplicacion) {
 		// Start of user code for method agregaAplicacion
+		this.aplicaciones.add(aplicacion);
 		// End of user code
 	}
 
@@ -95,6 +98,7 @@ public class SmartPhone {
 	 */
 	public void agregaMemoriaRAM(int cantidad) {
 		// Start of user code for method agregaMemoriaRAM
+		this.memoriaRAM+=cantidad;
 		// End of user code
 	}
 
@@ -187,6 +191,12 @@ public class SmartPhone {
 	 */
 	public HashSet<String> getAplicaciones() {
 		return this.aplicaciones;
+	}
+
+	@Override
+	public String toString() {
+		return "SmartPhone [marca=" + marca + ", modelo=" + modelo + ", memoriaRAM=" + memoriaRAM + ", memoriaROM="
+				+ memoriaROM + ", fechaDeLanzamiento=" + fechaDeLanzamiento + "]";
 	}
 
 }

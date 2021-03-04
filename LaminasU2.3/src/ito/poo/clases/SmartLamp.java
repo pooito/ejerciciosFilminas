@@ -5,7 +5,7 @@ public class SmartLamp {
 	private float consumoWhatts;
 	private String color;
 	private int lumenes;
-	private String estado; //  sin conectar, apagado, encendido, conectado, dañado 
+	private String estado; //  sin conectar, apagado, encendido, conectado, daÃ±ado 
 	// Inicializador
 	{
 	    this.consumoWhatts=0;
@@ -64,7 +64,7 @@ public class SmartLamp {
 		return this.estado.compareToIgnoreCase("apagado")==0;
 	}
 	public boolean isDa_ado() {
-		return this.estado.compareToIgnoreCase("dañado")==0;
+		return this.estado.compareToIgnoreCase("daÃ±ado")==0;
 	}
 	@Override
 	public String toString() {

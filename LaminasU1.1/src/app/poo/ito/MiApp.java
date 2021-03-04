@@ -1,6 +1,8 @@
 package app.poo.ito;
 
 import clases.poo.ito.Terreno;
+import clases.poo.ito.SmartPhone;
+import java.time.LocalDate;
 
 public class MiApp {
 	
@@ -26,10 +28,24 @@ public class MiApp {
 		System.out.println(Terreno.getCantidad());
 		
 	}
+	
+	static void run2() {
+		System.out.println(new SmartPhone());
+		SmartPhone sp= new SmartPhone("Apple","iPhone 4",4,256,LocalDate.of(2015, 10, 20));
+		System.out.println(sp);
+		sp.agregaAplicacion("chrome");
+		sp.agregaAplicacion("youtube");
+		sp.agregaAplicacion("instagram");
+		sp.agregaAplicacion("whatsapp");
+		System.out.println(sp);
+		System.out.println(sp.getAplicaciones());
+		sp.agregaAplicacion("instagram");
+		System.out.println(sp.getAplicaciones());
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        run();
+        run2();
 	}
 
 }
